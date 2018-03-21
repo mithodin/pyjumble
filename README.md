@@ -12,3 +12,5 @@ Jumble an audiofile reversibly
        
            unjumble.py <audiofile> <secret>
              recovers a shuffled audio file. Pass the files created by jumble.py to reverse the shuffling.
+             
+ Requires pydub, easysettings and ffmpeg/avconv.
