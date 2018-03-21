@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from pydub import AudioSegment
 import random 
-import numpy as np
 import easysettings as ez
 import sys
 
