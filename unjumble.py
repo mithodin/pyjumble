@@ -41,4 +41,4 @@ for s in unshuffled:
     shuffled = shuffled.append(s,crossfade=0)
 shuffled = shuffled.append(end,crossfade=0)
 
-shuffled.export("unshuffled.mp3",format="mp3")
+shuffled.export("unshuffled.flac",format="flac")

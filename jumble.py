@@ -13,8 +13,15 @@ shuffle_seq = 500
 try:
     filename = sys.argv[1]
 except:
-    print("Verwendung: jumble.py <Audiodatei>")
+    print("Verwendung: jumble.py <Audiodatei> [<start_shuffle>, <end_shuffle>, <shuffle_seq>]")
     sys.exit(-1)
+
+try:
+    start_shuffle = int(sys.argv[2])
+    end_shuffle = int(sys.argv[3])
+    shuffle_seq = int(sys.argv[4])
+except:
+    pass
 
 config = ez.EasySettings("unjumble.conf")
 config.set("start_shuffle",start_shuffle)
@@ -38,5 +45,5 @@ shuffled = shuffled.append(end,crossfade=0)
 
 indices = [i for (i,_) in middle]
 config.set("indices",indices)
-shuffled.export("shuffled.mp3",format="mp3")
+shuffled.export("shuffled.flac",format="flac")
 config.save()
