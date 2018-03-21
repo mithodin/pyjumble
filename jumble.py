@@ -6,7 +6,7 @@ import easysettings as ez
 import sys
 
 samplerate = 1000
-start_shuffle = 10 
+start_shuffle = 0 
 end_shuffle = 120
 shuffle_seq = 500
 
